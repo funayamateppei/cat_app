@@ -15,8 +15,6 @@ export default function Home() {
 
   const [img, setImg] = useState("");
 
-  useEffect()
-
   const fetchCatImage = async (): Promise<ImageUrl> => {
     const response = await axios.get("https://aws.random.cat/meow");
     console.log(response);
